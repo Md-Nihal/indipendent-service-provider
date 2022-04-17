@@ -7,7 +7,7 @@ const Service = ({service}) => {
     const navigate = useNavigate()
 
     const handleNavigateToService = id =>{
-        navigate(`/service/${id}`)
+        navigate(`/checkout/${name}`)
     }
     return (
         <div className='service'>
