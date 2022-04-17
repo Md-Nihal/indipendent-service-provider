@@ -2,7 +2,7 @@
 → Dream Wedding Photography
 
 • Live site Link: 
-→
+→ https://dream-wedding-photography.web.app/
 
 # what I did in here
 • 1st I create simple nav bar and footer
