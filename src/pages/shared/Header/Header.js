@@ -16,6 +16,7 @@ const Header = () => {
     const useNavigation = () =>{
         navigate('/about')
     }
+
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="danger" variant="dark">
@@ -29,7 +30,7 @@ const Header = () => {
                         <Nav className="me-auto">
                             <Nav.Link href="home#services">Services</Nav.Link>
                             <Nav.Link href="home#review">Review</Nav.Link>
-                            <Nav.Link to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             
                                 
                         </Nav>
