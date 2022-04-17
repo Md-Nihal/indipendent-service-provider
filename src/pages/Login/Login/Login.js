@@ -33,6 +33,7 @@ const Login = () => {
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
+    // Getting all form value
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;
@@ -59,7 +60,7 @@ const Login = () => {
     return (
         <div className='w-50 mx-auto'>
             <h1 className='text-danger text-center mt-3'>Please Login</h1>
-            
+            {/* Form section */}
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -76,12 +77,17 @@ const Login = () => {
                 <Button variant="danger w-50 d-block mx-auto mb-2" type="submit">
                     Login
                 </Button>
-
             </Form>
+
             {errorElement}
+
             <p>New in Dream wedding? <Link to={'/register'} className='text-primary pe-auto text-decoration-none' onClick={handleRegister} >Please register</Link></p>
+
             <p>Forgot password? <button to={'/register'} className=' btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword} >Reset password</button></p>
+
+            {/* Showing toast implement from out*/}
             <ToastContainer />
+
             <SocialLogIn></SocialLogIn>
         </div>
     );

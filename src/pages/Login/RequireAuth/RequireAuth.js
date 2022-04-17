@@ -5,6 +5,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../shared/Loading/Loading';
 
 const RequireAuth = ({children}) => {
+    // Protecting route
     const [user, loading] = useAuthState(auth)
     const location = useLocation();
     if(loading){
